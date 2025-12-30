@@ -1,3 +1,5 @@
+
+
 // ============================================================================
 // FILE: components/navigation/NavBar.tsx
 // Main navigation component - New Professional Design
@@ -31,7 +33,7 @@ export const NavBar: React.FC<NavBarProps> = ({ currentView, setCurrentView }) =
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Button
-            variant="ghost"
+            variant="secondary"
             onClick={() => setCurrentView('landing')}
             className="flex items-center gap-3 text-lg font-semibold hover:bg-transparent"
           >
@@ -46,7 +48,7 @@ export const NavBar: React.FC<NavBarProps> = ({ currentView, setCurrentView }) =
             {navItems.map((item) => (
               <Button
                 key={item.id}
-                variant={currentView === item.id ? 'secondary' : 'ghost'}
+                variant={currentView === item.id ? 'secondary' : 'secondary'}
                 onClick={() => {
                   console.log('Navigating to:', item.id);
                   setCurrentView(item.id);
@@ -60,10 +62,10 @@ export const NavBar: React.FC<NavBarProps> = ({ currentView, setCurrentView }) =
 
           {/* Mobile menu button */}
           <Button
-            variant="ghost"
-            size="icon"
+            variant="secondary"
+            size="sm"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden"
+            className="md:hidden p-2"
           >
             {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
@@ -76,7 +78,7 @@ export const NavBar: React.FC<NavBarProps> = ({ currentView, setCurrentView }) =
               {navItems.map((item) => (
                 <Button
                   key={item.id}
-                  variant={currentView === item.id ? 'secondary' : 'ghost'}
+                  variant={currentView === item.id ? 'secondary' : 'secondary'}
                   onClick={() => {
                     console.log('Mobile navigating to:', item.id);
                     setCurrentView(item.id);

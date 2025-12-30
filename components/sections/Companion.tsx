@@ -98,7 +98,7 @@ export const Companion: React.FC = () => {
                 }}
                 aria-label="Escribe tu mensaje"
               />
-              <Button onClick={handleSend} size="icon" className="h-[60px] w-[60px]">
+              <Button onClick={handleSend} size="lg" className="h-[60px] w-[60px] p-0">
                 <Send className="h-5 w-5" />
               </Button>
             </div>

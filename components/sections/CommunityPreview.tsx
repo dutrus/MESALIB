@@ -150,11 +150,11 @@ export const CommunityPreview: React.FC = () => {
                       <p className="mb-4 leading-relaxed text-gray-800 line-clamp-3">{post.content}</p>
 
                       <div className="flex items-center gap-4">
-                        <Button variant="ghost" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
+                        <Button variant="secondary" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
                           <Heart className="h-4 w-4" />
                           <span>{post.likes}</span>
                         </Button>
-                        <Button variant="ghost" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
+                        <Button variant="secondary" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
                           <MessageCircle className="h-4 w-4" />
                           <span>{post.comments}</span>
                         </Button>

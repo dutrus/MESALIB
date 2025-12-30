@@ -336,15 +336,15 @@ export const CommunitySection: React.FC = () => {
                     <p className="mb-4 leading-relaxed text-gray-800">{post.content}</p>
 
                     <div className="flex items-center gap-4">
-                      <Button variant="ghost" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
+                      <Button variant="secondary" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
                         <Heart className="h-4 w-4" />
                         <span>{post.likes}</span>
                       </Button>
-                      <Button variant="ghost" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
+                      <Button variant="secondary" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
                         <MessageCircle className="h-4 w-4" />
                         <span>{post.comments}</span>
                       </Button>
-                      <Button variant="ghost" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
+                      <Button variant="secondary" size="sm" className="gap-2 text-muted-foreground hover:text-primary">
                         <Send className="h-4 w-4" />
                         Conectar
                       </Button>
@@ -448,7 +448,7 @@ export const CommunitySection: React.FC = () => {
                           Enviar mensaje
                         </Button>
                       )}
-                      <Button size="sm" variant="ghost" className="gap-2">
+                      <Button size="sm" variant="secondary" className="gap-2">
                         Ver perfil
                       </Button>
                     </div>

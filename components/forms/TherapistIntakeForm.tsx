@@ -7,7 +7,11 @@ import { Input } from '@/components/ui/input';
 import { signUpUser } from '@/lib/api';
 import { Loader2 } from 'lucide-react';
 
-export const TherapistIntakeForm: React.FC = () => {
+interface TherapistIntakeFormProps {
+  initialData?: any;
+}
+
+export const TherapistIntakeForm: React.FC<TherapistIntakeFormProps> = ({ initialData }) => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);

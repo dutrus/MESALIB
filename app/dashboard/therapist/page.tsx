@@ -334,7 +334,7 @@ export default function TherapistDashboardPage() {
                             <p className="text-sm text-gray-600 mt-1">{match.patient?.main_reason}</p>
                             <div className="flex gap-2 mt-2">
                               {match.patient?.needs?.slice(0, 2).map((need: string) => (
-                                <TagChip key={need} size="sm">{need}</TagChip>
+                                <TagChip key={need}>{need}</TagChip>
                               ))}
                             </div>
                           </div>
@@ -358,7 +358,7 @@ export default function TherapistDashboardPage() {
                     <p className="text-sm text-gray-600">Especialidades</p>
                     <div className="flex flex-wrap gap-2 mt-1">
                       {therapistData.specialties.slice(0, 3).map((spec: string) => (
-                        <TagChip key={spec} size="sm">{spec}</TagChip>
+                        <TagChip key={spec}>{spec}</TagChip>
                       ))}
                     </div>
                   </div>
@@ -419,7 +419,7 @@ export default function TherapistDashboardPage() {
                           <div className="flex items-center gap-3 mb-2">
                             <h4 className="text-2xl font-bold text-gray-900">{match.patient?.name}</h4>
                             {match.patient?.urgency === 'high' && (
-                              <TagChip variant="error">🔴 Urgente</TagChip>
+                              <TagChip variant="danger">🔴 Urgente</TagChip>
                             )}
                             {match.patient?.urgency === 'medium' && (
                               <TagChip variant="warning">🟡 Media</TagChip>
